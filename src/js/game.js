@@ -1,12 +1,18 @@
-/* eslint-disable import/no-cycle */
 /* eslint-disable no-plusplus, no-console */
-import { interval } from './app';
+import Element from './elements';
 
 export default function game() {
+  const start = new Element();
+
+  start.addBoard();
+
+  const interval = setInterval(() => {
+    start.interval();
+  }, 1000);
+
   const container = document.querySelector('.board-container');
   const hitNum = document.querySelector('.hit-number');
   const missNum = document.querySelector('.miss-number');
-  // const goblin = document.querySelector('.goblin');
 
   container.addEventListener('click', (event) => {
     event.preventDefault();
