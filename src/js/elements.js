@@ -11,9 +11,12 @@ export default class Element {
   }
 
   addBoard() {
-    const body = document.querySelector('body');
+    document.body.innerHTML = `
+      <div class="container-info">
+        <p class="miss">До проигрыша: <span class="miss-number">5</span> промахов.</p>
+        <p class="hit">Всего попаданий: <span class="hit-number">0</span></p>
+      </div>
 
-    body.innerHTML = `
       <div class="board-container">
       </div>
       `;
