@@ -22,7 +22,6 @@ export default function game() {
       gameOverEl.classList.add('game-over');
       gameOverEl.textContent = 'GAME OVER';
       console.log('game over');
-      // missNum.textContent = 5;
       info.insertAdjacentElement(
         'beforeend',
         gameOverEl,
@@ -32,7 +31,6 @@ export default function game() {
 
     if (event.target.classList.contains('goblin')) {
       hitNum.textContent++;
-      // event.target.classList.remove('goblin');
     } else {
       missNum.textContent--;
     }
