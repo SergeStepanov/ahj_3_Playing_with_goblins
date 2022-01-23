@@ -28,17 +28,17 @@ p span {
 }
 
 .board-container {
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   /* border: 2px solid rgb(184, 2, 2);  */
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .board {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-color: rgb(145, 250, 194);
   border: 2px solid rgb(255, 52, 52); 
   border-radius: 50%; 

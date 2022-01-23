@@ -6,7 +6,7 @@ export default class Element {
     this.board = 4;
     this.container = null;
     this.cells = [];
-    this.random = new RandomNumber(this.board);
+    this.random = new RandomNumber(this.board ** 2);
     this.posGoblin = null;
   }
 
@@ -23,7 +23,7 @@ export default class Element {
 
     this.container = document.querySelector('.board-container');
 
-    for (let index = 0; index < this.board; index += 1) {
+    for (let index = 0; index < this.board ** 2; index += 1) {
       const element = document.createElement('div');
       element.classList.add('board');
       this.container.insertAdjacentElement('beforeend', element);
